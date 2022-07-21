@@ -1,4 +1,4 @@
-# Menu-System-Y2S2
+# Menu-System-tutorial-Y2S2
 Tutorial on how the main and pause menu systems were created for '3D Blocks...' (Year 2 Semester 2)
 
 # 1) Menu Script
@@ -33,6 +33,16 @@ This if statement is for what happens if Pause is disabled (the game is not paus
 Finally, you need an else statement for any other scenario, the only one in this case being if the game is paused. For this we need the opposite; to stop the character and camera from moving, enable the mouse and load the pause menu window, therefore the code is the same but flipped:
 
 ![image](https://user-images.githubusercontent.com/91538155/180266122-b9424550-4e57-440c-a047-50720a9127ed.png)
+
+
+# Assigning in Unity
+This script needs to be attached to the CANVAS that the dialogue for each NPC are children of, not the dialogue boxes themselves:
+
+![image](https://user-images.githubusercontent.com/91538155/180270450-fc3b99f7-5cf7-460a-85fe-42543eb66ef2.png)
+
+The Pause Menu (created in Unity), has to be a child of the canvas as well:
+
+![image](https://user-images.githubusercontent.com/91538155/180270597-b10f57a9-d094-4704-9b60-d634de23e3db.png)
 
 
 # That is all that is needed for the Menu System
